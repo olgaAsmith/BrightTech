@@ -5,10 +5,10 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: "./src/index.js",
+    main: "./src/javascript/pages/index.js",
   },
   output: {
-    filename: "main.[hash].js",
+    filename: "main.js",
     path: path.resolve(__dirname, "build"),
   },
   mode: "development",
@@ -25,17 +25,49 @@ module.exports = {
         use: "babel-loader",
         exclude: "/node_modules/",
       },
+
       {
-        test: /\.css$/,
+        test: /\.(scss)$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
           {
             loader: "css-loader",
+          },
+          {
+            loader: "postcss-loader",
             options: {
-              importLoaders: 1,
+              postcssOptions: {
+                plugins: () => [autoprefixer],
+              },
             },
           },
-          "postcss-loader",
+          {
+            loader: "sass-loader",
+          },
+        ],
+      },
+      {
+        test: /\.(sass)$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: () => [autoprefixer],
+              },
+            },
+          },
+          {
+            loader: "sass-loader",
+          },
         ],
       },
       {
@@ -57,11 +89,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      filename: 'main.[hash].html'
     }),
-    new MiniCssExtractPlugin({
-      filename: 'main.[hash].css',
-    }),
+    new MiniCssExtractPlugin({}),
     new CleanWebpackPlugin(),
   ],
 };

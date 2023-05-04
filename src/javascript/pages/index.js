@@ -1,1 +1,3 @@
-import '../../pages/index.css';
+import '../../sass/index.sass'
+import 'bootstrap'
+
