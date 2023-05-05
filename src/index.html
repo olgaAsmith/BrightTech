@@ -12,22 +12,22 @@
         <nav class="header__navigation col-lg-7 offset-lg-4">
           <ul class="navigation__menu list-unstyled m-0 p-0 d-flex justify-content-between">
             <li class="header__menu-item">
-              <a href="#" class="header__menu-item-link">About</a>
+              <a href="#" class="link link_menu header__menu-item-link">About</a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="header__menu-item-link">News</a>
+              <a href="#" class="link link_menu header__menu-item-link">News</a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="header__menu-item-link">Music</a>
+              <a href="#" class="link link_menu header__menu-item-link">Music</a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="header__menu-item-link">Media</a>
+              <a href="#" class="link link_menu header__menu-item-link">Media</a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="header__menu-item-link">Tours</a>
+              <a href="#" class="link link_menu header__menu-item-link">Tours</a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="header__menu-item-link">Contacts</a>
+              <a href="#" class="link link_menu header__menu-item-link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -44,15 +44,15 @@
           </div>
           <div class="news__block">
             <ul class="news__block-list list-unstyled row mb-0">
-                <li class="test-div col-lg-4 offset-lg-0 col-sm-6 offset-sm-3">
-                  <a href='#' class="news__card news__card_first d-flex">
+                <li class="news__block-item col-lg-4 offset-lg-0 col-sm-6 offset-sm-3">
+                  <a href='#' class="link link_card news__card news__card_first d-flex">
                     <div class="news__card-text-background mt-auto w-100 d-flex">
                       <h3 class="news__card-title m-auto p-2">Working on my upcoming full-lenth album that`s releasing later this year</h3>
                     </div>
                   </a>
                 </li>
               <li class="news__block-item col-lg-4 offset-lg-0 col-sm-6 offset-sm-3">
-                <a href='#' class="news__card news__card_second d-flex">
+                <a href='#' class="link link_card news__card news__card_second d-flex">
                   <div class="news__card-text-background mt-auto w-100 d-flex">
                     <h3 class="news__card-title m-auto p-2">Halloween vibes.
                       Listen my new track!</h3>
@@ -60,7 +60,7 @@
                 </a>
               </li>
               <li class="news__block-item col-lg-4 offset-lg-0 col-sm-6 offset-sm-3">
-                <a href='#' class="news__card news__card_third d-flex">
+                <a href='#' class="link link_card news__card news__card_third d-flex">
                   <div class="news__card-text-background mt-auto w-100 d-flex">
                     <h3 class="news__card-title m-auto p-2">ForLove is OUT NOW!!
                       Stream it here!</h3>
@@ -68,6 +68,41 @@
                 </a>
               </li>
             </ul>
+          </div>
+        </section>
+        <section class="about row">
+          <div class="about__text-block col-6">
+            <div class="about__title-row row align-items-center">
+               <img src="<%= require('./images/icons/musicBass.svg')%>" alt="Scale of music" class="about__bass-icon bass-icon col-1">
+               <h1 class="about__title m-0 col-5">BrightTech</h1>
+            </div>
+            <p class="about__text">BrightTech is a multi-platinum selling group, music writer, DJ and record producer. They have written for numerous pop stars including Chloe Roberts, Jacob Smith, Natalie Johnson and Adam Lee. Their catalog has amassed over 1 billion streams worldwide. More than 100 million of those streams can be attributed to their artist career and include such hits as Tyler Nelson's "Echoes," Olivia Martinez's "All I Need" and their own single "Escape." They were also a featured vocalist on David Guetta's #1 Rendezvous album. Their latest music video, "Lost in the Moment," reached 1 million streams in the first week, releasing independently. BrightTech is currently in the studio working on a self-produced album slated for release in 2022.
+            </p>
+            <ul class="about__facts-list list-unstyled row">
+              <li class="about__fact-item col-6 d-flex">
+                <div class="about__fact-icon"></div>
+                <p class="about__fact-text">Based in: New York</p>
+              </li>
+              <li class="about__fact-item col-6 d-flex">
+                <div class="about__fact-icon"></div>
+                <p class="about__fact-text">Genre: #Techno</p>
+              </li>
+              <li class="about__fact-item col-6 d-flex">
+                <div class="about__fact-icon"></div>
+                <p class="about__fact-text">Founded in 2015
+                </p>
+              </li>
+              <li class="about__fact-item col-6 d-flex">
+                <div class="about__fact-icon"></div>
+                <p class="about__fact-text">Label: NY Special Rec</p>
+              </li>
+            </ul>
+          </div>
+          <div class="about__photo-block col-5 offset-1 mt-5">
+            <div class="about__twin-photos">
+              <img src="<%= require('./images/aboutFrontPhoto.jpg')%>" alt="" class="about__photo about__photo_front">
+              <img src="<%= require('./images/aboutBackPhoto.jpg')%>" alt="" class="about__photo about__photo_back">
+            </div>
           </div>
         </section>
       </main>
