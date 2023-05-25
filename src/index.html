@@ -108,7 +108,8 @@
         <section class="media">
           <div class="media__describe d-flex justify-content-around align-items-center">
             <div class="media__describe-text-block d-flex flex-column">
-              <p class="media__describe-text m-0 mb-4">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque commodi harum voluptate, quo labore explicabo? Voluptates, dolorum suscipit aut, cum placeat ullam quam, vel nostrum beatae doloribus quae! Voluptatum, id”</p>
+              <p class="media__describe-text m-0 mb-4">“In the realm of music's electrifying pulse, a remarkable DJ collective emerges, redefining the art of sonic enchantment. This visionary group, comprised of ingenious mix maestros, thrills audiences with their mind-bending beats and captivating rhythms.
+              United by a shared passion for musical exploration, these virtuosos seamlessly blend genres, from pulsating techno to soul-stirring house. Their innovative approach to remixing and sampling creates a kaleidoscope of soundscapes that transport listeners to euphoric realms.”</p>
               <div class="media__describe-line mb-4"></div>
               <a href="#" class="link link_card media__describe-link">TechULove</a>
             </div>
@@ -147,7 +148,7 @@
                 <p class="tours__card-place w-100">New York Central Park</p>
                 <div class="tour__info-ticket w-100 d-flex">
                   <p class="tours__card-time w-50">May, 2024</p>
-                  <a href="#!" class="link link_card tours__card-buy-link w-50">tickets</a>
+                  <a href="#!" class="link tours__card-buy-link w-50">tickets</a>
               </div>
               </div>
             </li>
@@ -158,7 +159,7 @@
                 <p class="tours__card-place w-100">City Mountain Hall</p>
                 <div class="tour__info-ticket w-100 d-flex">
                   <p class="tours__card-time w-50">July, 2024</p>
-                  <a href="#!" class="link link_card tours__card-buy-link w-50">tickets</a>
+                  <a href="#!" class="link tours__card-buy-link w-50">tickets</a>
                 </div>
               </div>
             </li>
@@ -169,14 +170,64 @@
                 <p class="tours__card-place w-100">Village Stadim</p>
                 <div class="tour__info-ticket w-100 d-flex">
                   <p class="tours__card-time w-50">September, 2024</p>
-                  <a href="#!" class="link link_card tours__card-buy-link w-50">tickets</a>
+                  <a href="#!" class="link tours__card-buy-link w-50">tickets</a>
                 </div>
               </div>
             </li>
           </ul>
         </section>
       </main>
-      <footer class="footer mt-5"></footer>
+      <footer class="footer">
+        <div class="footer__container col-6 offset-3 d-flex flex-column align-items-center">
+          <a href="#!" class="link footer__logo">
+            <img src="<%= require('./images/logo/logo.svg')%>" alt="" class="footer__logo-img">
+          </a>
+          <div class="footer__container d-flex">
+            <div class="footer__container-text footer__container-text_left">
+              <p class="footer__text">Artist Management: </p>
+              <p class="footer__text">email: </p>
+            </div>
+            <div class="footer__container-text footer__container-text_right">
+              <p class="footer__text">John Billy</p>
+              <p class="footer__text">john@bright.com</p>
+            </div>
+          </div>
+
+          <ul class="footer__icon-list list-unstyled d-flex w-100 justify-content-around">
+            <li class="footer__icon-item">
+              <a href="#!" class="link footer__icon-link">
+                <img src="<%= require('./images/icons/apple.svg')%>" alt="Apple ico" class="footer__icon-image">
+              </a>
+            </li>
+            <li class="footer__icon-item">
+              <a href="#!" class="link footer__icon-link">
+                <img src="<%= require('./images/icons/twitter.svg')%>" alt="Twitter icon" class="footer__icon-image">
+              </a>
+            </li>
+            <li class="footer__icon-item">
+              <a href="#!" class="link footer__icon-link">
+                <img src="<%= require('./images/icons/facebook.svg')%>" alt="Facebook icon" class="footer__icon-image">
+              </a>
+            </li>
+            <li class="footer__icon-item">
+              <a href="#!" class="link footer__icon-link">
+                <img src="<%= require('./images/icons/instagram.svg')%>" alt="Instagram icon" class="footer__icon-image">
+              </a>
+            </li>
+            <li class="footer__icon-item">
+              <a href="#!" class="link footer__icon-link">
+                <img src="<%= require('./images/icons/youtube.svg')%>" alt="Youtube icon" class="footer__icon-image">
+              </a>
+            </li>
+            <li class="footer__icon-item">
+              <a href="#!" class="link footer__icon-link">
+                <img src="<%= require('./images/icons/spotify.svg')%>" alt="Spotify icon" class="footer__icon-image">
+              </a>
+            </li>
+          </ul>
+          <p class="footer__copyright">© 2020 bright tech</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
