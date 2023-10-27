@@ -5,3 +5,19 @@
 
 @mixin borderRadius($first: 20px, $second: 0)
   border-radius: $first $second
+
+@mixin sm
+  @media screen and (max-width: 480px)
+    @content
+
+@mixin md
+  @media screen and (max-width: 768px)
+    @content
+
+@mixin lg
+  @media screen and (max-width: 1024px)
+    @content
+
+@mixin xl
+  @media screen and (max-width: 1280px)
+    @content

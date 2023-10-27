@@ -44,14 +44,14 @@
           </div>
           <div class="news__block">
             <ul class="news__block-list list-unstyled row mb-0">
-                <li class="news__block-item col-lg-4 offset-lg-0 col-sm-6 offset-sm-3">
+                <li class="news__block-item col-lg-4 offset-lg-0 col-7 mx-auto">
                   <a href='#' class="link link_card news__card news__card_first d-flex">
                     <div class="news__card-text-background mt-auto w-100 d-flex">
                       <h3 class="news__card-title m-auto p-2">Working on my upcoming full-lenth album that`s releasing later this year</h3>
                     </div>
                   </a>
                 </li>
-              <li class="news__block-item col-lg-4 offset-lg-0 col-sm-6 offset-sm-3">
+              <li class="news__block-item col-lg-4 offset-lg-0 col-7 mx-auto">
                 <a href='#' class="link link_card news__card news__card_second d-flex">
                   <div class="news__card-text-background mt-auto w-100 d-flex">
                     <h3 class="news__card-title m-auto p-2">Halloween vibes.
@@ -59,7 +59,7 @@
                   </div>
                 </a>
               </li>
-              <li class="news__block-item col-lg-4 offset-lg-0 col-sm-6 offset-sm-3">
+              <li class="news__block-item col-lg-4 offset-lg-0 col-7 mx-auto">
                 <a href='#' class="link link_card news__card news__card_third d-flex">
                   <div class="news__card-text-background mt-auto w-100 d-flex">
                     <h3 class="news__card-title m-auto p-2">ForLove is OUT NOW!!
@@ -71,7 +71,7 @@
           </div>
         </section>
         <section class="about row">
-          <div class="about__text-block col-6">
+          <div class="about__text-block col-lg-6 col-12">
             <div class="about__title-row row align-items-center">
                <img src="<%= require('./images/icons/musicBass.svg')%>" alt="Scale of music" class="about__bass-icon bass-icon col-1">
                <h1 class="about__title m-0 col-5">BrightTech</h1>
@@ -98,22 +98,22 @@
               </li>
             </ul>
           </div>
-          <div class="about__photo-block col-5 offset-1 mt-5">
+          <div class="about__photo-block col-lg-5 offset-lg-1 col-sm-5 mx-auto mt-5">
             <div class="about__twin-photos">
-              <img src="<%= require('./images/aboutFrontPhoto.jpg')%>" alt="" class="about__photo about__photo_front">
-              <img src="<%= require('./images/aboutBackPhoto.jpg')%>" alt="" class="about__photo about__photo_back">
+              <img src="<%= require('./images/aboutFrontPhoto.jpg')%>" alt="" class="about__photo about__photo_front w-75 h-75">
+              <img src="<%= require('./images/aboutBackPhoto.jpg')%>" alt="" class="about__photo about__photo_back w-75 h-75">
             </div>
           </div>
         </section>
         <section class="media">
-          <div class="media__describe d-flex justify-content-around align-items-center">
-            <div class="media__describe-text-block d-flex flex-column">
+          <div class="media__describe d-flex justify-content-around align-items-center flex-lg-row flex-column">
+            <div class="media__describe-text-block d-flex flex-column mb-sm-5 me-lg-5">
               <p class="media__describe-text m-0 mb-4">“In the realm of music's electrifying pulse, a remarkable DJ collective emerges, redefining the art of sonic enchantment. This visionary group, comprised of ingenious mix maestros, thrills audiences with their mind-bending beats and captivating rhythms.
               United by a shared passion for musical exploration, these virtuosos seamlessly blend genres, from pulsating techno to soul-stirring house. Their innovative approach to remixing and sampling creates a kaleidoscope of soundscapes that transport listeners to euphoric realms.”</p>
               <div class="media__describe-line mb-4"></div>
               <a href="#" class="link link_card media__describe-link">TechULove</a>
             </div>
-            <img src="<%= require('./images/photoAbout.jpg')%>" alt="" class="media__describe-photo">
+            <img src="<%= require('./images/photoAbout.jpg')%>" alt="" class="media__describe-photo pt-3">
           </div>
         </section>
         <section class="gallery">
@@ -144,9 +144,9 @@
         </section>
         <section class="tours">
           <ul class="tours__list list-unstyled row">
-            <li class="tours__card col-4">
+            <li class="tours__card col-lg-4 col-8 m-auto pt-5 pt-lg-0">
               <div class="tours__card-container">
-                <img src="<%= require('./images/calendar1.jpg')%>" alt="New York" class="tours__card-image w-100">
+                <img src="<%= require('./images/calendar1.jpg')%>" alt="New York" class="tours__card-image w-100 object-fit-cover">
                 <h3 class="tours__card-title w-100">New York, NY</h3>
                 <p class="tours__card-place w-100">New York Central Park</p>
                 <div class="tour__info-ticket w-100 d-flex">
@@ -155,9 +155,9 @@
               </div>
               </div>
             </li>
-            <li class="tours__card col-4">
+            <li class="tours__card col-lg-4 col-8 m-auto pt-5 pt-lg-0">
               <div class="tours__card-container">
-                <img src="<%= require('./images/calendar2.jpg')%>" alt="Los Angeles" class="tours__card-image w-100">
+                <img src="<%= require('./images/calendar2.jpg')%>" alt="Los Angeles" class="tours__card-image w-100 object-fit-cover">
                 <h3 class="tours__card-title w-100">Los Angeles, LA</h3>
                 <p class="tours__card-place w-100">City Mountain Hall</p>
                 <div class="tour__info-ticket w-100 d-flex">
@@ -166,9 +166,9 @@
                 </div>
               </div>
             </li>
-            <li class="tours__card col-4">
+            <li class="tours__card col-lg-4 col-8 m-auto pt-5 pt-lg-0">
               <div class="tours__card-container">
-                <img src="<%= require('./images/calendar3.jpg')%>" alt="Chicago" class="tours__card-image w-100">
+                <img src="<%= require('./images/calendar3.jpg')%>" alt="Chicago" class="tours__card-image w-100 object-fit-cover">
                 <h3 class="tours__card-title w-100">Chicago</h3>
                 <p class="tours__card-place w-100">Village Stadim</p>
                 <div class="tour__info-ticket w-100 d-flex">
