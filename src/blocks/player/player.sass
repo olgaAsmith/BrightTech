@@ -1,0 +1,153 @@
+.hidden
+  display: none
+
+.player
+  width: 100%
+  margin: auto
+  background: $violet
+  opacity: .7
+  padding: 20px 20px
+  border-radius: 14px
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)
+
+.player-controls
+  display: flex
+  align-items: center
+
+.player-play-btn
+  background: transparent
+  border: none
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 36px
+  height: 36px
+
+.icon-container
+  fill: transparent
+  stroke: none
+
+.player-play-btn:hover
+  fill: $white
+
+.player-play-btn svg
+  color: $white
+  position: relative
+  left: 0.5px
+  width: 36px
+  height: 36px
+  display: block
+
+.player-play-btn:hover svg
+  opacity: .8
+
+.player-timeline
+  display: flex
+  flex: 1
+  align-items: center
+  justify-content: space-between
+  padding-left: 10px
+
+.player-progress
+  display: flex
+  postion: relative
+  height: 6px
+  background: #a3a3a3
+  border-radius: 25px
+  margin: 0 5px
+  flex: 10
+  flex-basis: 100%
+  overflow: hidden
+
+.player-progress-filled
+  height: 6px
+  background: #0e0e0e
+  flex: 0
+  flex-basis: 0%
+  border-radius: 25px
+
+.player-time
+  padding: 2px 5px
+
+.player-volume-container
+  width: 15%
+
+.player-volume
+  height: 28px
+  -webkit-appearance: none
+  margin: 10px 0
+  width: 100%
+  background: transparent
+
+.player-volume:focus
+  outline: none
+
+.player-volume::-webkit-slider-runnable-track
+  width: 100%
+  height: 6px
+  cursor: pointer
+  animate: 0.2s
+  background: $white
+  border-radius: 10px
+
+.player-volume::-webkit-slider-thumb
+  height: 16px
+  width: 16px
+  border-radius: 100px
+  border: none
+  background: $white
+  cursor: pointer
+  -webkit-appearance: none
+  margin-top: -4px
+
+.player-volume:focus::-webkit-slider-runnable-track
+  background: $white
+
+.player-volume::-moz-range-track
+  width: 100%
+  height: 6px
+  cursor: pointer
+  animate: 0.2s
+  background: $white
+  border-radius: 10px
+
+.player-volume::-moz-range-thumb
+  height: 16px
+  width: 16px
+  border-radius: 100px
+  border: none
+  background: $white
+  cursor: pointer
+  margin-top: -4px
+
+.player-volume::-ms-track
+  width: 100%
+  height: 6px
+  cursor: pointer
+  animate: 0.2s
+  background: $white
+  border-radius: 10px
+
+.player-volume::-ms-fill-lower
+  background: $white
+  border-radius: 10px
+
+.player-volume::-ms-fill-upper
+  background: $white
+  border-radius: 10px
+
+.player-volume::-ms-thumb
+  margin-top: 1px
+  height: 15px
+  width: 15px
+  border-radius: 5px
+  border: none
+  background: $white
+  cursor: pointer
+
+.player-volume:focus::-ms-fill-lower
+  background: $white
+
+.player-volume:focus::-ms-fill-upper
+  background: $white
