@@ -1,8 +1,10 @@
 # BrightTech
 
 ### DJ Music
+##### Landing Page
 
-**GHPages: https://olgaasmith.github.io/BrightTech/**
+**GitHub Pages: https://olgaasmith.github.io/BrightTech/**
+
 
 Using technologies with DJ's BrightTech:
 
