@@ -44,14 +44,14 @@
           </div>
           <div class="news__block">
             <ul class="news__block-list list-unstyled row mb-0">
-                <li class="news__block-item col-lg-4 offset-lg-0 col-7 mx-auto">
+                <li class="news__block-item col-lg-4 offset-lg-0 col-sm-7 col-10 mx-auto">
                   <a href='#' class="link link_card news__card news__card_first d-flex">
                     <div class="news__card-text-background mt-auto w-100 d-flex">
                       <h3 class="news__card-title m-auto p-2">Working on my upcoming full-lenth album that`s releasing later this year</h3>
                     </div>
                   </a>
                 </li>
-              <li class="news__block-item col-lg-4 offset-lg-0 col-7 mx-auto">
+              <li class="news__block-item col-lg-4 offset-lg-0 col-sm-7 col-10 mx-auto">
                 <a href='#' class="link link_card news__card news__card_second d-flex">
                   <div class="news__card-text-background mt-auto w-100 d-flex">
                     <h3 class="news__card-title m-auto p-2">Halloween vibes.
@@ -59,7 +59,7 @@
                   </div>
                 </a>
               </li>
-              <li class="news__block-item col-lg-4 offset-lg-0 col-7 mx-auto">
+              <li class="news__block-item col-lg-4 offset-lg-0 col-sm-7 col-10 mx-auto">
                 <a href='#' class="link link_card news__card news__card_third d-flex">
                   <div class="news__card-text-background mt-auto w-100 d-flex">
                     <h3 class="news__card-title m-auto p-2">ForLove is OUT NOW!!
@@ -79,20 +79,20 @@
             <p class="about__text">BrightTech is a multi-platinum selling group, music writer, DJ and record producer. They have written for numerous pop stars including Chloe Roberts, Jacob Smith, Natalie Johnson and Adam Lee. Their catalog has amassed over 1 billion streams worldwide. More than 100 million of those streams can be attributed to their artist career and include such hits as Tyler Nelson's "Echoes," Olivia Martinez's "All I Need" and their own single "Escape." They were also a featured vocalist on David Guetta's #1 Rendezvous album. Their latest music video, "Lost in the Moment," reached 1 million streams in the first week, releasing independently. BrightTech is currently in the studio working on a self-produced album slated for release in 2022.
             </p>
             <ul class="about__facts-list list-unstyled row">
-              <li class="about__fact-item col-6 d-flex">
+              <li class="about__fact-item col-sm-6 col-12 d-flex pt-3 pt-sm-0">
                 <div class="about__fact-icon"></div>
                 <p class="about__fact-text">Based in: New York</p>
               </li>
-              <li class="about__fact-item col-6 d-flex">
+              <li class="about__fact-item col-sm-6 col-12 d-flex pt-3 pt-sm-0">
                 <div class="about__fact-icon"></div>
                 <p class="about__fact-text">Genre: #Techno</p>
               </li>
-              <li class="about__fact-item col-6 d-flex">
+              <li class="about__fact-item col-sm-6 col-12 d-flex pt-3 pt-sm-0">
                 <div class="about__fact-icon"></div>
                 <p class="about__fact-text">Founded in 2015
                 </p>
               </li>
-              <li class="about__fact-item col-6 d-flex">
+              <li class="about__fact-item col-sm-6 col-12 d-flex pt-3 pt-sm-0">
                 <div class="about__fact-icon"></div>
                 <p class="about__fact-text">Label: NY Special Rec</p>
               </li>
@@ -116,15 +116,13 @@
             <img src="<%= require('./images/photoAbout.jpg')%>" alt="" class="media__describe-photo pt-3">
           </div>
         </section>
-        <section class="gallery">
-
-
+        <section class="gallery ms-0 ms-sm-3">
             <div class="container justify-content-center">
             <div class="row">
-              <div class="col-3">
+              <div class="col-sm-3 col-6 order-0">
                 <img class="gallery__image w-100 h-100" src="<%= require('./images/GalleryLasVegas1.jpg')%>">
               </div>
-              <div class="row col-6 gallery__central-block">
+              <div class="row col-sm-6 col-12 gallery__central-block order-2 order-sm-1 pt-4 pt-sm-0 ms-1 ms-sm-0">
                 <div class="col-6">
                   <img class="gallery__image w-100 h-100" src="<%= require('./images/GalleryLasVegas2.jpg')%>">
                 </div>
@@ -135,16 +133,14 @@
                   <img class="gallery__image w-100 pt-4" src="<%= require('./images/GalleryLasVegas5.jpg')%>">
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-sm-3 col-6 order-1 order-sm-2">
                 <img class="gallery__image w-100 h-100" src="<%= require('./images/GalleryLasVegas4.jpg')%>">
               </div>
             </div>
-
-
         </section>
         <section class="tours">
-          <ul class="tours__list list-unstyled row">
-            <li class="tours__card col-lg-4 col-8 m-auto pt-5 pt-lg-0">
+          <ul class="tours__list list-unstyled row w-100 mx-auto">
+            <li class="tours__card col-lg-4 col-10 col-sm-6 m-auto pt-5 pt-lg-0">
               <div class="tours__card-container">
                 <img src="<%= require('./images/calendar1.jpg')%>" alt="New York" class="tours__card-image w-100 object-fit-cover">
                 <h3 class="tours__card-title w-100">New York, NY</h3>
@@ -155,7 +151,7 @@
               </div>
               </div>
             </li>
-            <li class="tours__card col-lg-4 col-8 m-auto pt-5 pt-lg-0">
+            <li class="tours__card col-lg-4 col-10 col-sm-6 m-auto pt-5 pt-lg-0">
               <div class="tours__card-container">
                 <img src="<%= require('./images/calendar2.jpg')%>" alt="Los Angeles" class="tours__card-image w-100 object-fit-cover">
                 <h3 class="tours__card-title w-100">Los Angeles, LA</h3>
@@ -166,7 +162,7 @@
                 </div>
               </div>
             </li>
-            <li class="tours__card col-lg-4 col-8 m-auto pt-5 pt-lg-0">
+            <li class="tours__card col-lg-4 col-10 col-sm-6 m-auto pt-5 pt-lg-0">
               <div class="tours__card-container">
                 <img src="<%= require('./images/calendar3.jpg')%>" alt="Chicago" class="tours__card-image w-100 object-fit-cover">
                 <h3 class="tours__card-title w-100">Chicago</h3>
@@ -181,13 +177,13 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__container col-6 offset-3 d-flex flex-column align-items-center">
+        <div class="footer__container col-12 col-sm-6 offset-sm-3 d-flex flex-column align-items-center w-100 mx-auto">
           <a href="#!" class="link footer__logo">
             <img src="<%= require('./images/logo/logo.svg')%>" alt="" class="footer__logo-img">
           </a>
           <div class="footer__container d-flex">
             <div class="footer__container-text footer__container-text_left">
-              <p class="footer__text">Artist Management: </p>
+              <p class="footer__text text-nowrap">Artist Management: </p>
               <p class="footer__text">email: </p>
             </div>
             <div class="footer__container-text footer__container-text_right">
@@ -196,7 +192,7 @@
             </div>
           </div>
 
-          <ul class="footer__icon-list list-unstyled d-flex w-100 justify-content-around">
+          <ul class="footer__icon-list list-unstyled d-flex w-50 justify-content-around flex-wrap gap-2">
             <li class="footer__icon-item">
               <a href="#!" class="link footer__icon-link">
                 <img src="<%= require('./images/icons/apple.svg')%>" alt="Apple ico" class="footer__icon-image">
@@ -228,7 +224,7 @@
               </a>
             </li>
           </ul>
-          <p class="footer__copyright">© 2020 bright tech</p>
+          <p class="footer__copyright">© 2023 bright tech</p>
         </div>
       </footer>
     </div>

@@ -1,2 +1,7 @@
 .media__describe-text
-  @include font
+  @include font($size: 16px, $lineHeight: 24px)
+  opacity: 0.7
+
+@include md
+  .media__describe-text
+    text-align: justify
