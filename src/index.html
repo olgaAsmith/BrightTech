@@ -12,28 +12,25 @@
         <nav class="header__navigation col-lg-7 offset-lg-4">
           <ul class="navigation__menu list-unstyled m-0 p-0 d-flex justify-content-between">
             <li class="header__menu-item">
-              <a href="#" class="link link_menu header__menu-item-link">About</a>
+              <a href="#about" class="link link_menu header__menu-item-link">About</a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="link link_menu header__menu-item-link">News</a>
+              <a href="#news" class="link link_menu header__menu-item-link">News</a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="link link_menu header__menu-item-link">Music</a>
+              <a href="#media" class="link link_menu header__menu-item-link">Media</a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="link link_menu header__menu-item-link">Media</a>
+              <a href="#tours" class="link link_menu header__menu-item-link">Tours</a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="link link_menu header__menu-item-link">Tours</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#" class="link link_menu header__menu-item-link">Contacts</a>
+              <a href="#footer" class="link link_menu header__menu-item-link">Contacts</a>
             </li>
           </ul>
         </nav>
       </header>
       <main class="main container-fluid">
-        <section class="news">
+        <section class="news" id="news">
           <div class="news__new-song">
             <h2 class="news__new-song-title m-0">New Single</h2>
             <p class="news__new-song-name">For Love</p>
@@ -95,7 +92,7 @@
             </ul>
           </div>
         </section>
-        <section class="about row">
+        <section class="about row" id="about">
           <div class="about__text-block col-lg-6 col-12">
             <div class="about__title-row row align-items-center">
                <img src="<%= require('./images/icons/musicBass.svg')%>" alt="Scale of music" class="about__bass-icon bass-icon col-1">
@@ -130,7 +127,7 @@
             </div>
           </div>
         </section>
-        <section class="media">
+        <section class="media" id="media">
           <div class="media__describe d-flex justify-content-around align-items-center flex-lg-row flex-column">
             <div class="media__describe-text-block d-flex flex-column mb-sm-5 me-lg-5">
               <p class="media__describe-text m-0 mb-4">“In the realm of music's electrifying pulse, a remarkable DJ collective emerges, redefining the art of sonic enchantment. This visionary group, comprised of ingenious mix maestros, thrills audiences with their mind-bending beats and captivating rhythms.
@@ -141,7 +138,7 @@
             <img src="<%= require('./images/photoAbout.jpg')%>" alt="" class="media__describe-photo pt-3">
           </div>
         </section>
-        <section class="gallery ms-0 ms-sm-3">
+        <section class="gallery ms-0 ms-sm-3" id="gallery">
             <div class="container justify-content-center">
             <div class="row">
               <div class="col-sm-3 col-6 order-0">
@@ -163,7 +160,7 @@
               </div>
             </div>
         </section>
-        <section class="tours">
+        <section class="tours" id="tours">
           <ul class="tours__list list-unstyled row w-100 mx-auto">
             <li class="tours__card col-lg-4 col-10 col-sm-6 m-auto pt-5 pt-lg-0">
               <div class="tours__card-container">
@@ -201,7 +198,7 @@
           </ul>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="footer__container col-12 col-sm-6 offset-sm-3 d-flex flex-column align-items-center w-100 mx-auto">
           <a href="#!" class="link footer__logo">
             <img src="<%= require('./images/logo/logo.svg')%>" alt="" class="footer__logo-img">

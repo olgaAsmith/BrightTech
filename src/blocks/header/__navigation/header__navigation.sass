@@ -1,6 +1,9 @@
 .header__navigation
   margin-top: 42px
-  font-weight: 600
-  font-size: 18px
-  line-height: 27px
   @include font($weight: 600)
+@include md
+  .header__navigation
+    margin-top: 20px
+@include sm
+  .header__navigation
+    font-size: 12px
