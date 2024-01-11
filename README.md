@@ -1,12 +1,18 @@
 # BrightTech
 
-### DJ Music
-##### Landing Page
+## Установка
 
-**GitHub Pages: https://olgaasmith.github.io/BrightTech/**
+1. Склонировать - 'git clone https://github.com/olgaAsmith/BrightTech.git'
+2. Установка - 'npm install' или 'yarn install'
 
 
-Using technologies with DJ's BrightTech:
+#### Сcылка на проект https://olgaasmith.github.io/BrightTech/
+
+
+--------
+### Проект Landing Page
+
+Using technologies:
 
 <div >
 	<code><img width="55" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" alt="HTML" title="HTML"/></code>
